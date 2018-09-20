@@ -32,6 +32,21 @@ section > ul > li{
     width: 27%;
     min-width: 200px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+section > ul > li:nth-child(2) > h3::before{
+    content: 'BESTSELLER';
+    position: absolute;
+    font-size: 1rem;
+    top: -38px;
+    color: red;
+    margin-left: -8px;
+    padding: 10px 40px 0 40px;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 section > ul > li > h3{
     background-color: var(--yellow_color);
@@ -53,6 +68,7 @@ i{
 mark{
     font-size: 2.5rem;
     background-color: inherit;
+    margin-top: auto;
 }
 section > ul > li > p{
     border-top: 7px solid var(--yellow_color);
